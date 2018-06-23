@@ -2,3 +2,7 @@
 .gradle
 .idea
 out/
+# Module ignore
+META-INF
+*/gradlew
+*/gradlew.bat
