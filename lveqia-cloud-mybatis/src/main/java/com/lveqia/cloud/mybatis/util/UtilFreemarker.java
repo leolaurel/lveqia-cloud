@@ -10,7 +10,7 @@ import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class UtilFreemarker {
 

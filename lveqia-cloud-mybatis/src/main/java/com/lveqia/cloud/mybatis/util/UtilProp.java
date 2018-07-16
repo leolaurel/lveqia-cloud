@@ -8,10 +8,11 @@ import java.util.Properties;
 
 
 /**
- * @author Leolaurel
+ * ½âÎöconfig.xml
+ * @author leolaurel
  */
 public class UtilProp {
-	private static BaseInfo params = new BaseInfo();
+	public static BaseInfo params = new BaseInfo();
 	public static DataSource dataSource = new DataSource();
 	static{
 		init();

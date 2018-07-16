@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
+/**
+ * @author ${baseInfo.author}
+ */
 @RestController
 @RequestMapping("/${tables.fieldName}")
 public class ${tables.className}Controller {

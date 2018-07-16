@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ${tables.comment},数据库操作接口类
  * 类名:${tables.className}Mapper
- * 创建人:${baseInfo.author}
+ * @author ${baseInfo.author}
  * 创建时间:${baseInfo.createTime}
  */
 @Mapper
@@ -36,6 +36,6 @@ public interface ${tables.className}Mapper {
 
     @Select("SELECT * FROM ${tables.tableName} limit 1000")
     @ResultMap("${tables.fieldName}")
-    List<${tables.className}> fingListAll();
+    List<${tables.className}> findListAll();
 
 }

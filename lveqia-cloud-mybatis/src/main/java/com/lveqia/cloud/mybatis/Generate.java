@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class Generate {
 	private static final String rootPath = "D:\\Workspace\\Java\\lveqia-cloud\\lveqia-cloud-mybatis\\src\\main\\java";

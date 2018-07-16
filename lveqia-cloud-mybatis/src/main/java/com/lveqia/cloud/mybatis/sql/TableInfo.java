@@ -1,7 +1,6 @@
 package com.lveqia.cloud.mybatis.sql;
-
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class TableInfo {
     /** 表名称 */

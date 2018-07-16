@@ -14,7 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class UtilDB {
 	private static Connection conn      = null;
@@ -25,7 +25,7 @@ public class UtilDB {
 	 * 链接数据库
 	 * @return 数据库连接
 	 */
-	static Connection connection() {
+	public static Connection connection() {
 		try {
 			Class.forName(Constants.DRIVER);
 		} catch (ClassNotFoundException e1) {

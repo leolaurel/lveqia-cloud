@@ -3,7 +3,7 @@ package com.lveqia.cloud.mybatis;
 import com.lveqia.cloud.mybatis.util.UtilProp;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class Constants {
 	public static boolean isDebug = false;

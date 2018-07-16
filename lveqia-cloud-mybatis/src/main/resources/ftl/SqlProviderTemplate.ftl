@@ -6,7 +6,7 @@ import org.apache.ibatis.jdbc.SQL;
 /**
  * ${tables.comment},SQL语句组装类
  * 类名:${tables.className}SqlProvider
- * 创建人:${baseInfo.author}
+ * @author ${baseInfo.author}
  * 创建时间:${baseInfo.createTime}
  */
 public class ${tables.className}SqlProvider {
@@ -15,7 +15,7 @@ public class ${tables.className}SqlProvider {
         return new SQL(){{
             INSERT_INTO("${tables.tableName}");
         <#list columns as columnData>
-            if(${tables.fieldName}.get${columnData.filedName?cap_first}()!= null) VALUES("${columnData.columnName}", "${r'#{'}${columnData.filedName}${r'}'}");
+            if(${tables.fieldName}.get${columnData.filedName?cap_first}()!= null) VALUES("`${columnData.columnName}`", "${r'#{'}${columnData.filedName}${r'}'}");
         </#list>
         }}.toString();
     }
@@ -26,7 +26,7 @@ public class ${tables.className}SqlProvider {
         return new SQL(){{
             UPDATE("${tables.tableName}");
         <#list columns as columnData>
-            if(${tables.fieldName}.get${columnData.filedName?cap_first}()!= null) SET("${columnData.columnName} = ${r'#{'}${columnData.filedName}${r'}'}");
+            if(${tables.fieldName}.get${columnData.filedName?cap_first}()!= null) SET("`${columnData.columnName}` = ${r'#{'}${columnData.filedName}${r'}'}");
         </#list>
             WHERE("id = ${r'#{id}'}");
         }}.toString();

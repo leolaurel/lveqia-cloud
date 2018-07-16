@@ -4,7 +4,7 @@ import java.io.File;
 
 /**
  * 路径工具类
- * @author Leolaurel
+ * @author leolaurel
  * 
  */
 public class UtilPath {
@@ -24,7 +24,7 @@ public class UtilPath {
 	}
 
 	/*
-	 * 获取resources路径
+	 * 获取classpath2
 	 */
 	public static String getClassResources() {
 		String path = (String.valueOf(Thread.currentThread().getContextClassLoader().getResource("")))

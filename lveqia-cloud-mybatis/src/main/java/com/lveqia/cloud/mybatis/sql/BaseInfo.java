@@ -4,7 +4,7 @@ import com.lveqia.cloud.mybatis.Constants;
 import com.lveqia.cloud.mybatis.util.UtilDate;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class BaseInfo {
 	public String author = Constants.DEFAULT_AUTHOR;

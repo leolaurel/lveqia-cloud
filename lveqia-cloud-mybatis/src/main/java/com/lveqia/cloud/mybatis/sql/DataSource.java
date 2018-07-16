@@ -1,13 +1,13 @@
 package com.lveqia.cloud.mybatis.sql;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class DataSource {
-	private String driver;
-	private String url;
-	private String username;
-	private String password;
+	public String driver;
+	public String url;
+	public String username;
+	public String password;
 	public String getDriver() {
 		return driver;
 	}

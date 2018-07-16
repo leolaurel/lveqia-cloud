@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class UtilDate {
 	public static String getToday(){
@@ -13,8 +13,8 @@ public class UtilDate {
 		result = format(date);
 		return result;
 	}
-	private static String format(Date date){
-		String format = "yyyy-MM-dd";
+	public static String format(Date date){
+		String format = "yyyyMMdd";
 		SimpleDateFormat fmt = new SimpleDateFormat(format);
 		return fmt.format(date);
 	}

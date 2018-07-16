@@ -3,11 +3,11 @@ package com.lveqia.cloud.mybatis.util;
 import java.io.File;
 
 /**
- * @author Leolaurel
+ * @author leolaurel
  */
 public class UtilString {
 	/**
-	 * 首字母大写
+	 * 首字母大写p
 	 */
 	static String capitalize(String str) {
 		if (null == str) {
@@ -39,7 +39,7 @@ public class UtilString {
 	}
 
 	/**
-	 * 去掉表名前缀"t_", 把"_"去掉，且其后的字母大写，其他字母小写
+	 * 表面t_开头去掉，后面根据"_"字母大写，首字母小写
 	 * @param tableName 表中列名
 	 * @return java类对象名字，首字母小写的驼峰写法
 	 */
@@ -51,7 +51,7 @@ public class UtilString {
 		return dbNameToVarName(tableName);
 	}
 	/**
-	 * 把"_"去掉，且其后的字母大写，其他字母小写
+	 * 将表中列名去下划线且下划线后首字母大写,其他字母小写
 	 * @param columnName 表中列名
 	 * @return java类属性名
 	 */
@@ -69,7 +69,7 @@ public class UtilString {
 				fieldName.append(Character.toUpperCase(ch));
 				toUpper = false;
 			} else {
-				fieldName.append(Character.toLowerCase(ch));
+				fieldName.append(ch);//fieldName.append(Character.toLowerCase(ch));
 			}
 		}
 		return fieldName.toString();
@@ -92,10 +92,14 @@ public class UtilString {
 				type = "String"; break;
 			case "TIMESTAMP":case "DATETIME":case "DATE":
 				type = "Date"; break;
-			case "INT":case "INT UNSIGNED":case "TINYINT":
+			case "INT":case "INT UNSIGNED":case "TINYINT": case "SMALLINT":
 				type = "Integer"; break;
 			case "BIT":
 				type = "Boolean"; break;
+			case "DOUBLE":
+				type = "Double"; break;
+			case "FLOAT":
+				type = "Float"; break;
 			case "BIGINT":
 				type = "Long"; break;
 			case "MEDIUMBLOB":case "VARBINARY":

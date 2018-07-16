@@ -5,7 +5,9 @@ import ${baseInfo.packageName}.service.${tables.className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
+/**
+ * @author ${baseInfo.author}
+ */
 @Service("${tables.fieldName}Service")
 public class ${tables.className}ServiceImpl implements ${tables.className}Service {
 
